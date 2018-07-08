@@ -11,8 +11,14 @@
 
 class SocketTestCases
 {
-  public:
-	void testCreate();
+public:
+void testCreate();
+void testTcpServer();
+void testTcpServerandClient();
 };
+
+// 开启 server
+void* tcp_server(void *);
+void openserver();
 
 #endif // __UNP_SOCKET_TEST_H__

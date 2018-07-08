@@ -1,10 +1,12 @@
 # 在root_dir编译过程
+# just run this
 aclocal
 autoconf
 automake  --add-missing
 autoheader
-libtoolize
+glibtoolize
 
 mkdir build
 cd build
 ../configure && make
+./bin/test
