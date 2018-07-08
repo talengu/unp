@@ -1,0 +1,10 @@
+# 在root_dir编译过程
+aclocal
+autoconf
+automake  --add-missing
+autoheader
+libtoolize
+
+mkdir build
+cd build
+../configure && make
